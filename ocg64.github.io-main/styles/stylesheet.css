@@ -1,0 +1,31 @@
+
+body {
+background-color: #1b1b1b;
+
+color:  #f2f2f2;
+background: url(../medya/bckgrnd.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1 {
+    color:   #999999;
+}
+
+
+a:link{
+  color:   #b3b300;
+}
+a:visited{
+  color:   #b3b300;
+}
+
+
+
+
+
+/*background-image: url("../medya/bckgrnd.jpg");
+background-size: cover;
+background-repeat:   no-repeat;
+ background-position: center center; */
