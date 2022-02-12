@@ -44,7 +44,11 @@ h2{
     font-family:monospace
 }
 
+p{
+    font-family:monospace;
 
+max-width:1000px;
+}
 /*background-image: url("../medya/bckgrnd.jpg");
 background-size: cover;
 background-repeat:   no-repeat;
