@@ -36,6 +36,12 @@ a:visited{
   color:   #b3b300;
 }
 
+a.b1 {
+
+     border: solid  #9900e6 2px;
+
+}
+
 h1{
     font-family:monospace
 }
