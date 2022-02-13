@@ -46,8 +46,9 @@ h2{
 
 p{
     font-family:monospace;
+font-size:120%;
+max-width:1500px;
 
-max-width:1000px;
 }
 /*background-image: url("../medya/bckgrnd.jpg");
 background-size: cover;
