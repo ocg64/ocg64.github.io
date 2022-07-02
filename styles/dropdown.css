@@ -38,7 +38,7 @@ https://codepen.io/markcaron/pen/wdVmpB
 
 .dropdown > label:after,
 .dropdown > a[role="button"]:after {
-  content: none;
+  content: url(../medya/Hamburger_icon.png);
   font-family: monospace;
   display: inline-block;
   margin-left: 6px;
@@ -84,7 +84,7 @@ https://codepen.io/markcaron/pen/wdVmpB
 
 .dropdown > [type="checkbox"]:checked + label:after,
 .dropdown > ul:target ~ a:after {
-  content: none;
+  content: url(../medya/close_icon.png);
 }
 
 .dropdown a.close {
