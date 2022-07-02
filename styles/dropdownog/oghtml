@@ -1,0 +1,39 @@
+<h2>Checkbox version</h2>
+
+<div class="dropdown">
+  <input type="checkbox" id="my-dropdown" value="" name="my-checkbox">
+  <label for="my-dropdown"
+     data-toggle="dropdown">
+  Choose one
+  </label>
+  <ul>
+    <li><a href="#">Coffee</a></li>
+    <li><a href="#">Coverage</a></li>
+    <li><a href="https://twitter.com/hashtag/covfefe">Covfefe</a></li>
+  </ul>
+</div>
+
+
+<h2>Anchor version</h2>
+
+<div class="dropdown">
+  <ul id="my-dropdown2">
+    <li><a href="#">Coffee</a></li>
+    <li><a href="#">Coverage</a></li>
+    <li><a href="https://twitter.com/hashtag/covfefe">Covfefe</a></li>
+  </ul>
+  <a href="#my-dropdown2"
+     aria-controls="my-dropdown2"
+     role="button"
+     data-toggle="dropdown"
+     id="my-dropdown2-btn">
+  Choose one
+  </a>
+  <a href="#my-dropdown2-btn"
+     aria-controls="my-dropdown2"
+     role="button"
+     data-toggle="dropdown"
+     class="close">
+  Close dropdown
+  </a>
+</div>
