@@ -1,0 +1,125 @@
+/* kod bana ait değil, böyle destansı şeyler yapamıyorum
+ben, şuradan araklayıp biraz kendime göre düzenledim:
+https://codepen.io/markcaron/pen/wdVmpB
+*/
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+/* dropdown BUTONUNUN stili burada*/
+.dropdown > label,
+.dropdown > a[role="button"] {
+  display: inline-block;
+  padding: 2.5px 6x;
+  color: #ff6600;
+  line-height: 1.5em;
+  font-family: monospace;
+  font-size: 28px;
+  text-decoration: none;
+  border: 3px solid #9900e6;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+/* style when hovering over the button */
+.dropdown > label:hover,
+.dropdown > a[role="button"]:hover,
+.dropdown > a[role="button"]:focus {
+  border-color:   #009900;
+}
+
+.dropdown > label:after,
+.dropdown > a[role="button"]:after {
+  content: none;
+  font-family: monospace;
+  display: inline-block;
+  margin-left: 6px;
+}
+/* dropdown menünün stili burada*/
+.dropdown > ul {
+  position: absolute;
+  font-size: 28px;
+  z-index: 999;
+  display: block;
+  left: -100vw;
+  top: calc(1.5em + 14px);
+  border: 3px solid red;
+  background:   #006699;
+  padding: 6px 0;
+  margin: 0;
+  list-style: none;
+  width: 150%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+/* dropdown menüdeki içeriklerin stili burada */
+.dropdown > ul a {
+  display: block;
+  padding: 6px 15px;
+  text-decoration: none;
+  color:   #ffff00;
+}
+/* mouse hoverlarken dropdown menünün stili burada*/
+.dropdown > ul a:hover,
+.dropdown > ul a:focus {
+  background:  #003300;
+}
+
+.dropdown > input[type="checkbox"]:checked ~ ul,
+.dropdown > ul:target {
+  left: 0;
+}
+
+.dropdown > [type="checkbox"]:checked + label:after,
+.dropdown > ul:target ~ a:after {
+  content: none;
+}
+
+.dropdown a.close {
+  display: none;
+}
+
+.dropdown > ul:target ~ a.close {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-indent: -100vw;
+  z-index: 1000;
+}
+
+
+/*
+ Demo purposes only
+*/
+/*
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+  color: #333;
+}
+
+.dropdown + h2 {
+  margin-top: 60px;
+}
+*/
